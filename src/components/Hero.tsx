@@ -27,10 +27,10 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           <div className="text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-              Conseil, Coaching et Accompagnement Professionnel
+              Faites fructifier votre épargne avec des rendements garantis jusqu'à <span className="text-emerald-600">11,80%</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8">
-              Expertise en coaching, ressources humaines et communication pour sportifs et entreprises. Développez votre potentiel avec AMB.
+              Découvrez nos solutions d'épargne sécurisées avec des taux attractifs et un capital garanti. Commencez à investir dès maintenant avec seulement 100€.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button 
