@@ -47,7 +47,7 @@ export function Hero() {
                 En savoir plus
               </button>
             </div>
-            <div className="mt-6 sm:mt-8 lg:mt-12 grid grid-cols-3 gap-3 sm:gap-6">
+            <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-2 sm:gap-6 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm">
               {stats.map((stat, index) => (
                 <AnimatedCounter key={index} value={stat.value} label={stat.label} />
               ))}
