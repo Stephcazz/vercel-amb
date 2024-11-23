@@ -29,18 +29,17 @@ export function AnimatedCounter({ value, label }: AnimatedCounterProps) {
   }, [inView, spring, numericValue]);
 
   const display = useTransform(spring, (current) => {
-    if (suffix === 'k+') {
-      return `${current.toFixed(0)}k+`;
-    }
-    return `${current.toFixed(2)}%`;
+    return suffix.includes('+') ? `${Math.round(current)}${suffix}` : `${current.toFixed(0)}${suffix}`;
   });
 
   return (
-    <div ref={ref} className="text-center">
-      <motion.div className="text-3xl font-bold text-gray-900">
+    <div ref={ref} className="text-center p-4">
+      <motion.div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
         {display}
       </motion.div>
-      <div className="text-sm text-gray-600">{label}</div>
+      <div className="text-xs sm:text-sm text-gray-600 whitespace-normal">
+        {label}
+      </div>
     </div>
   );
 }
